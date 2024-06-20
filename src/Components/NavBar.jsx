@@ -1,25 +1,22 @@
 import { NavLink } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function NavBar() {
   return (
-    <div className="flex gap-10 lg:gap-20 justify-between bg-gradient-to-r from-sky-500 to-indigo-500 py-4">
-      <div className="flex gap-2 items-center flex-shrink-0 ml-4">
-        <button className="btn bg-primary text-black border-none">
-          <NavLink to="/">Home</NavLink>
-        </button>
-        <button className="btn bg-primary text-black border-none">
-          <NavLink to="/resume">Resume</NavLink>
-        </button>
-        <button className="btn bg-primary text-black border-none">
-          <NavLink to="/projects">Projects</NavLink>
-        </button>
+    <nav className="mb-20 flex items-center justify-between py-6">
+      <div className="flex flex-shrink-0 items-center">
+        <img
+          src="./Images/weblogo.png"
+          alt="David Kerr"
+          className="mx-2 w-16"
+        />
       </div>
-      <div className="flex flex-shrink-0 md:gap-2 mr-4">
-        <button className="btn bg-primary text-black border-none">
-          <NavLink to="/contact">Contact</NavLink>
-        </button>
+      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+        <FaLinkedin />
+        <FaGithub />
       </div>
-    </div>
+    </nav>
   );
 }
 
