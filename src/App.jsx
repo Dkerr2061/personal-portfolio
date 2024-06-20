@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import Resume from "./Pages/Resume";
-import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import NavBar from "./Components/NavBar";
 import Projects from "./Components/Projects";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Technologies from "./Components/Technologies";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <About />
         <Technologies />
         <Projects />
+        <Contact />
       </div>
 
       <Routes>
