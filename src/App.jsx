@@ -20,6 +20,7 @@ function App() {
         <Hero />
         <About />
         <Technologies />
+        <Projects />
       </div>
 
       <Routes>
