@@ -2,8 +2,10 @@ function Resume() {
   const pdfURL = "./Images/resume.pdf";
 
   return (
-    <div className="flex items-center justify-center h-screen w-screen p-2">
-      <iframe src={pdfURL} className="w-full lg:w-4/5 h-full border-none" />
+    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
+      <div className="flex items-center justify-center h-screen w-screen">
+        <iframe src={pdfURL} className="w-full h-full border-none" />
+      </div>
     </div>
   );
 }
