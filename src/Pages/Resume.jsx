@@ -1,11 +1,11 @@
-function Resume(){
-  const pdfURL = './Images/resume.pdf'
-  
+function Resume() {
+  const pdfURL = "./Images/resume.pdf";
+
   return (
-   <div className="h-screen w-screen">
-    <iframe src={pdfURL} className="w-full h-full"/>
-   </div>
-  )
+    <div className="flex items-center justify-center h-screen w-screen">
+      <iframe src={pdfURL} className="w-4/5 h-full" />
+    </div>
+  );
 }
 
-export default Resume
+export default Resume;

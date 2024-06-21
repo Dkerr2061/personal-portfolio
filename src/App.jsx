@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./index.css";
 import Resume from "./Pages/Resume";
-import Home from "./Pages/Home";
 import NavBar from "./Components/NavBar";
 import Projects from "./Components/Projects";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
 import Technologies from "./Components/Technologies";
 import Contact from "./Components/Contact";
+import ContactForm from "./Pages/ContactForm";
 
 function App() {
   return (
@@ -17,20 +17,30 @@ function App() {
       </div>
       <div className="container mx-auto px-8">
         <NavBar />
-        <Hero />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<ContactForm />} />
+        </Routes>
+        {/* <Hero />
         <About />
         <Technologies />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </div>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
     </div>
+  );
+}
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      <Technologies />
+      <Projects />
+      <Contact />
+    </>
   );
 }
 
