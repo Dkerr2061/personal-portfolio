@@ -32,6 +32,7 @@ function Index() {
         "SQLAlchemy",
         "Tailwinds",
       ],
+      link: "https://github.com/Dkerr2061/phase-4-capstone-project",
     },
     {
       title: "CLI Artist and Album Project",
@@ -39,6 +40,7 @@ function Index() {
       description:
         "This application enables users to navigate the CLI to manipulate database data, including getting, adding, patching, and deleting artists and albums. Through this project, I gained proficiency in Python, SQL, and ORM, deepening my understanding of database operations and data population.",
       technologies: ["Python", "SQLite"],
+      link: "https://github.com/Dkerr2061/phase-3-modded-capstone",
     },
   ];
 
