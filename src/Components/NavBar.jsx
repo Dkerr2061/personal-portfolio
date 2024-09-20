@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaMedium } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 function NavBar() {
@@ -28,6 +28,13 @@ function NavBar() {
           rel="noopener noreferrer"
         >
           <FaGithub />
+        </a>
+        <a
+          href="https://medium.com/@kerrky"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaMedium />
         </a>
         <NavLink to="/resume">Resume</NavLink>
       </div>
