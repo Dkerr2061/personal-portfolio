@@ -17,6 +17,7 @@ function Index() {
         "SQLAlchemy",
         "Tailwinds",
       ],
+      link: "https://webflix-frontend.vercel.app/",
     },
     {
       title: "Looney Tunes",

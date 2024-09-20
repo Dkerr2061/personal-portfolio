@@ -38,6 +38,14 @@ function Projects() {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">{project.title}</h6>
+              {project.link ? (
+                <a
+                  href={project.link}
+                  className="my-2 rounded bg-neutral-900 px-2 py-1 font-medium text-cyan-500"
+                >
+                  Link
+                </a>
+              ) : null}
               <p className="mb-4 text-neutral-400">{project.description}</p>
               {project.technologies.map((tech, i) => (
                 <span
