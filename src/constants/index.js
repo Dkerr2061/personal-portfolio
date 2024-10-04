@@ -1,9 +1,18 @@
 import CLI from "../assets/cli.png";
 import WebFlix from "../assets/WebFlix.png";
 import looney from "../assets/looney.png";
+import gear from "../assets/gearheadz.png";
 
 function Index() {
   const PROJECTS = [
+    {
+      title: "GearHeadz",
+      image: gear,
+      description:
+        "GearHeadz is a blog dedicated to sharing articles about cars and motorcycles. Through this project, I honed my skills using Astro (a modern JavaScript framework) alongside JavaScript, React, and Tailwind CSS to build a fast, responsive, and visually engaging platform for fellow automotive enthusiasts.",
+      technologies: ["Astro", "React", "JavaScript"],
+      link: "https://gear-headz.vercel.app/",
+    },
     {
       title: "WebFlix",
       image: WebFlix,

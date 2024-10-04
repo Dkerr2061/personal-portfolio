@@ -22,11 +22,6 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
-        {/* <Hero />
-        <About />
-        <Technologies />
-        <Projects />
-        <Contact /> */}
       </div>
     </div>
   );
