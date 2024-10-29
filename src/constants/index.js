@@ -2,9 +2,18 @@ import CLI from "../assets/cli.png";
 import WebFlix from "../assets/WebFlix.png";
 import looney from "../assets/looney.png";
 import gear from "../assets/gearheadz.png";
+import REST from "../assets/RESTfulAPI.png";
 
 function Index() {
   const PROJECTS = [
+    {
+      title: "RESTful API",
+      image: REST,
+      description:
+        "This RESTful API, developed with Python, Flask, and SQLAlchemy, serves as the backend for several front-end applications within my personal projects. It manages CRUD operations for dynamic content, seamlessly handling data flow between the client interfaces and the server. Deployed on Vercel, the API leverages SQLAlchemy to interact with a relational database, providing secure, reliable endpoints optimized for performance. Each endpoint is designed for efficient data retrieval and modification, ensuring that users experience fast and responsive interactions across the front-end applications.",
+      technologies: ["Python", "Flask", "SQLAlchemy"],
+      link: null,
+    },
     {
       title: "GearHeadz",
       image: gear,
