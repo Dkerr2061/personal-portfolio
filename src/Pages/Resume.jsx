@@ -1,5 +1,5 @@
 function Resume() {
-  const pdfURL = "./Images/ResumeA.pdf";
+  const pdfURL = "./Images/DavidKerrResume.pdf";
 
   return (
     <div className="overflow-x-hidden antialiased text-neutral-300 selection:bg-cyan-300 selection:text-cyan-900">
