@@ -1,8 +1,18 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { RiJavascriptLine } from "react-icons/ri";
 import { FaPython } from "react-icons/fa";
-import { SiFlask } from "react-icons/si";
+import { SiFlask, SiGit } from "react-icons/si";
 import { SiSqlalchemy } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { SiVercel } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiSqlite } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 import { animate, motion } from "framer-motion";
 
 function Technologies() {
@@ -19,12 +29,12 @@ function Technologies() {
     },
   });
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="pb-24 border-b border-neutral-800">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text text-4xl tracking-tight text-transparent text-center"
+        className="my-20 text-4xl tracking-tight text-center text-transparent bg-gradient-to-r from-cyan-300 via-slate-500 to-blue-500 bg-clip-text"
       >
         Technologies
       </motion.h2>
@@ -38,7 +48,7 @@ function Technologies() {
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
@@ -46,15 +56,15 @@ function Technologies() {
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <RiJavascriptLine className="text-7xl text-yellow-400" />
+          <RiJavascriptLine className="text-yellow-400 text-7xl" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
         >
           <SiFlask className="text-7xl" />
         </motion.div>
@@ -62,7 +72,7 @@ function Technologies() {
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
         >
           <SiSqlalchemy className="text-7xl text-lime-400" />
         </motion.div>
@@ -70,9 +80,89 @@ function Technologies() {
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
         >
-          <FaPython className="text-7xl text-yellow-400" />
+          <FaPython className="text-yellow-400 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiTypescript className="text-blue-500 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <FaGitAlt className="text-orange-500 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiTailwindcss className="text-blue-600 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <BiLogoPostgresql className="text-blue-500 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiVercel className="text-white text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiPostman className="text-orange-400 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiMysql className="text-blue-300 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <FaGithubSquare className="text-white text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiVite className="text-yellow-300 text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(1)}
+          initial="initial"
+          animate="animate"
+          className="p-4 border-4 rounded-2xl border-neutral-800"
+        >
+          <SiSqlite className="text-lime-300 text-7xl" />
         </motion.div>
       </motion.div>
     </div>

@@ -3,9 +3,18 @@ import WebFlix from "../assets/WebFlix.png";
 import looney from "../assets/looney.png";
 import gear from "../assets/gearheadz.png";
 import REST from "../assets/RESTfulAPI.png";
+import bug from "../assets/bug-project.png";
 
 function Index() {
   const PROJECTS = [
+    {
+      title: "Bug Tracker",
+      image: bug,
+      description:
+        "Bug Tracker is a user-friendly application for reporting and managing bugs. Users can report bugs, assign statuses and priorities, edit or delete entries, and sort or filter bugs by status, priority, and submission date. Priority tags are color-coded for quick visual reference, and dates are auto-generated upon submission. This project helped me deepen my knowledge of React, TypeScript, Firebase, and Material UI while creating a streamlined and efficient bug management system.",
+      technologies: ["React", "TypeScript", "Firebase", "Material UI"],
+      link: "https://bug-form.web.app/",
+    },
     {
       title: "RESTful API",
       image: REST,
