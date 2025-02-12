@@ -108,14 +108,14 @@ function Technologies() {
         >
           <SiTailwindcss className="text-blue-600 text-7xl" />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
           className="p-4 border-4 rounded-2xl border-neutral-800"
         >
           <BiLogoPostgresql className="text-blue-500 text-7xl" />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={iconVariants(1)}
           initial="initial"
